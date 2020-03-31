@@ -19,7 +19,7 @@ jobs:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1.2.0
       with:
-        flutter-version: '1.16.2'
+        flutter-version: '1.9.1+hotfix.6'
     - run: flutter pub get
     - run: flutter test
       
@@ -33,6 +33,6 @@ jobs:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1.2.0
       with:
-        flutter-version: '1.16.2'
+        flutter-version: '1.9.1+hotfix.6'
     - run: flutter pub get
     - run: flutter build apk
