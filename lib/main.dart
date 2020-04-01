@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   static const List<Widget> _appTabs = <Widget>[
     Text('Activity'),
-    Text('Exposure Graph')
+    Text('Exposure Network')
   ];
 
   void _onItemTapped(int index) {
