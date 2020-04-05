@@ -1,16 +1,16 @@
-import 'package:exposur/ActivityTab/ActivityTab.dart';
+import 'package:exposur/UI/ExposureNetworkTab/ExpousureNetworkTab.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  group('ActivityTab', () {
+  group('ExposurNetworkTab', () {
     testWidgets('Returns a simple text widget', (WidgetTester tester) async {
       await tester.pumpWidget(new Directionality(
           //Has to have a directionality widget in the heirarchy
           textDirection: TextDirection.ltr,
-          child: ActivityTab()));
+          child: ExposureNetworkTab()));
 
-      expect(find.text("Activity"), findsOneWidget);
+      expect(find.text("Exposure"), findsOneWidget);
     });
   });
 }

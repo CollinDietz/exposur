@@ -1,4 +1,4 @@
-import 'package:exposur/Exposur/Exposur.dart';
+import 'package:exposur/UI/Exposur/Exposur.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

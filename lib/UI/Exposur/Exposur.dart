@@ -1,6 +1,6 @@
-import 'package:exposur/ActivityTab/ActivityTab.dart';
-import 'package:exposur/ExposureNetworkTab/ExpousureNetworkTab.dart';
-import 'package:exposur/InteractionLogger/InteractionLogger.dart';
+import 'package:exposur/UI/ExposureNetworkTab/ExpousureNetworkTab.dart';
+import 'package:exposur/UI/ActivityTab/ActivityTab.dart';
+import 'package:exposur/UI/InteractionLogger/InteractionLogger.dart';
 import 'package:flutter/material.dart';
 
 class Exposur extends StatelessWidget {
