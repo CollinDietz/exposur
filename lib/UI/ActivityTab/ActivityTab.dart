@@ -3,12 +3,36 @@ import 'package:flutter/material.dart';
 
 class ActivityTab extends StatelessWidget {
   final List<InteractionRecord> _interactions = [
-    InteractionRecord("Collin", "Tyler"),
-    InteractionRecord("Collin", "Amy"),
+    InteractionRecord("You", "Tyler"),
+    InteractionRecord("You", "Amy"),
     InteractionRecord("Tyler", "Kourt"),
     InteractionRecord("Kourt", "Haley"),
     InteractionRecord("Amy", "Nicole"),
-    InteractionRecord("Madison", "Emily")
+    InteractionRecord("Madison", "Emily"),
+    InteractionRecord("You", "Tyler"),
+    InteractionRecord("You", "Amy"),
+    InteractionRecord("Tyler", "Kourt"),
+    InteractionRecord("Kourt", "Haley"),
+    InteractionRecord("Amy", "Nicole"),
+    InteractionRecord("Madison", "Emily"),
+    InteractionRecord("You", "Tyler"),
+    InteractionRecord("You", "Amy"),
+    InteractionRecord("Tyler", "Kourt"),
+    InteractionRecord("Kourt", "Haley"),
+    InteractionRecord("Amy", "Nicole"),
+    InteractionRecord("Madison", "Emily"),
+    InteractionRecord("You", "Tyler"),
+    InteractionRecord("You", "Amy"),
+    InteractionRecord("Tyler", "Kourt"),
+    InteractionRecord("Kourt", "Haley"),
+    InteractionRecord("Amy", "Nicole"),
+    InteractionRecord("Madison", "Emily"),
+    InteractionRecord("You", "Tyler"),
+    InteractionRecord("You", "Amy"),
+    InteractionRecord("Tyler", "Kourt"),
+    InteractionRecord("Kourt", "Haley"),
+    InteractionRecord("Amy", "Nicole"),
+    InteractionRecord("Madison", "Emily"),
   ];
 
   final TextStyle _textStyle = TextStyle(fontSize: 18.0);
