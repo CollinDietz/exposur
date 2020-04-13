@@ -1,38 +1,39 @@
 import 'package:exposur/Backend/InteractionRecord.dart';
+import 'package:exposur/Backend/Person.dart';
 import 'package:flutter/material.dart';
 
 class ActivityTab extends StatelessWidget {
   final List<InteractionRecord> _interactions = [
-    InteractionRecord("You", "Tyler"),
-    InteractionRecord("You", "Amy"),
-    InteractionRecord("Tyler", "Kourt"),
-    InteractionRecord("Kourt", "Haley"),
-    InteractionRecord("Amy", "Nicole"),
-    InteractionRecord("Madison", "Emily"),
-    InteractionRecord("You", "Tyler"),
-    InteractionRecord("You", "Amy"),
-    InteractionRecord("Tyler", "Kourt"),
-    InteractionRecord("Kourt", "Haley"),
-    InteractionRecord("Amy", "Nicole"),
-    InteractionRecord("Madison", "Emily"),
-    InteractionRecord("You", "Tyler"),
-    InteractionRecord("You", "Amy"),
-    InteractionRecord("Tyler", "Kourt"),
-    InteractionRecord("Kourt", "Haley"),
-    InteractionRecord("Amy", "Nicole"),
-    InteractionRecord("Madison", "Emily"),
-    InteractionRecord("You", "Tyler"),
-    InteractionRecord("You", "Amy"),
-    InteractionRecord("Tyler", "Kourt"),
-    InteractionRecord("Kourt", "Haley"),
-    InteractionRecord("Amy", "Nicole"),
-    InteractionRecord("Madison", "Emily"),
-    InteractionRecord("You", "Tyler"),
-    InteractionRecord("You", "Amy"),
-    InteractionRecord("Tyler", "Kourt"),
-    InteractionRecord("Kourt", "Haley"),
-    InteractionRecord("Amy", "Nicole"),
-    InteractionRecord("Madison", "Emily"),
+    InteractionRecord(Person.user(), Person("Tyler")),
+    InteractionRecord(Person.user(), Person("Amy")),
+    InteractionRecord(Person("Tyler"), Person("Kourt")),
+    InteractionRecord(Person("Kourt"), Person("Haley")),
+    InteractionRecord(Person("Amy"), Person("Nicole")),
+    InteractionRecord(Person("Madison"), Person("Emily")),
+    InteractionRecord(Person.user(), Person("Tyler")),
+    InteractionRecord(Person.user(), Person("Amy")),
+    InteractionRecord(Person("Tyler"), Person("Kourt")),
+    InteractionRecord(Person("Kourt"), Person("Haley")),
+    InteractionRecord(Person("Amy"), Person("Nicole")),
+    InteractionRecord(Person("Madison"), Person("Emily")),
+    InteractionRecord(Person.user(), Person("Tyler")),
+    InteractionRecord(Person.user(), Person("Amy")),
+    InteractionRecord(Person("Tyler"), Person("Kourt")),
+    InteractionRecord(Person("Kourt"), Person("Haley")),
+    InteractionRecord(Person("Amy"), Person("Nicole")),
+    InteractionRecord(Person("Madison"), Person("Emily")),
+    InteractionRecord(Person.user(), Person("Tyler")),
+    InteractionRecord(Person.user(), Person("Amy")),
+    InteractionRecord(Person("Tyler"), Person("Kourt")),
+    InteractionRecord(Person("Kourt"), Person("Haley")),
+    InteractionRecord(Person("Amy"), Person("Nicole")),
+    InteractionRecord(Person("Madison"), Person("Emily")),
+    InteractionRecord(Person.user(), Person("Tyler")),
+    InteractionRecord(Person.user(), Person("Amy")),
+    InteractionRecord(Person("Tyler"), Person("Kourt")),
+    InteractionRecord(Person("Kourt"), Person("Haley")),
+    InteractionRecord(Person("Amy"), Person("Nicole")),
+    InteractionRecord(Person("Madison"), Person("Emily")),
   ];
 
   final TextStyle _textStyle = TextStyle(fontSize: 18.0);
@@ -52,10 +53,7 @@ class ActivityTab extends StatelessWidget {
 
           if (index < _interactions.length) {
             return ListTile(
-                title: Text(
-              _interactions[index].display(),
-              style: _textStyle,
-            ));
+                title: _interactions[index].build(context));
           } else {
             return null;
           }

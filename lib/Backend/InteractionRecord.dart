@@ -1,16 +1,25 @@
-class InteractionRecord
-{
-  String _primaryPerson;
-  String _secondaryPerson;
+import 'package:exposur/Backend/Person.dart';
+import 'package:flutter/material.dart';
 
-  InteractionRecord(String primaryPerson, String secondaryPerson)
-  {
-    _primaryPerson = primaryPerson;
-    _secondaryPerson = secondaryPerson;
-  }
+class InteractionRecord extends StatelessWidget{
+  final Person _primaryPerson;
+  final Person _secondaryPerson;
 
-  String display()
-  {
-    return _primaryPerson + " was with " + _secondaryPerson;
+  InteractionRecord(this._primaryPerson, this._secondaryPerson);
+
+  @override
+  Widget build(BuildContext context) {
+    final TextSpan _space = TextSpan(text: " ", style: Theme.of(context).textTheme.body1);
+    final TextSpan _with = TextSpan(text: " with ", style: Theme.of(context).textTheme.body1);
+
+    return RichText(
+        text: TextSpan(children: <TextSpan>[
+          _primaryPerson.name,
+          _space,
+          _primaryPerson.verb,
+          _with,
+          _secondaryPerson.name
+        ]),
+      );
   }
 }
